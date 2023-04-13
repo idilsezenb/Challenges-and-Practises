@@ -35,9 +35,9 @@ function main() {
     
     if (N%2 == 1) { console.log("Weird");}  //Here we use the "% (mode)" operator to indicate whether "N" is odd or even.  
   
-    else if ( (N%2 == 0) && (2 <= N <= 5) ) {console.log("Not Weird");}  //Here we look at whether "N" is even and between 2 and 5.
+    else if ( (N%2 == 0) && (2 <= N) && (N <= 5) ) {console.log("Not Weird");} //Here we look at whether "N" is even and between 2 and 5.
     
-    else if ( (N%2 == 0) && (6 <= N <= 20) ) {console.log("Weird");}  //Here we look at whether N is even and between 6 and 20.  
+    else if ( (N%2 == 0) && (6 <= N) && (N <= 20) ) {console.log("Weird");}  //Here we look at whether N is even and between 6 and 20.  
     
     else if ( (N%2 == 0) && (N > 20) ) {console.log("Not Weird");}  //Here we look at whether N is greater than 20.  
     
