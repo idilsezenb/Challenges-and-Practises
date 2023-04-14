@@ -71,8 +71,8 @@ function readLine() {
     return inputString[currentLine++];
 }
 
-function getLetter(s) {
- **Down from here is where you need to write the code**
+function getLetter(s) {  
+ **Down from here is where you need to write the code**  
    switch(s.charAt(0)) {   //charAt fetches the property at the specified address.
        case('a' || 'e' || 'i' || 'o' || 'u'):   //Parentheses are used for multiple selections. "||" means 'or'. ":" is put at the end of the case.
        return 'A';
