@@ -1,6 +1,41 @@
 # HackerRank 10 Days Javascript Challenge
 You can find the codes in the challenges with its explanations.
 
+## Day 1: Functions
+
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}  
+ /* Create the function factorial here*/  
+ **Down from here is where you need to write the code**
+
+function factorial(n) {  
+    if(n>1) {  
+        return n*factorial(n-1);  
+        }    
+    return 1;  
+}
+
+
 ## Day 3:Intro to Conditional Statements
 
 <br>
@@ -17,10 +52,9 @@ process.stdin.on('data', function(inputStdin) {
 });
 
 process.stdin.on('end', function() {
-    inputString = inputString.split('\n');
-
-main();
-});
+    inputString = inputString.split('\n'); main();
+} 
+);
 
 function readLine() {
     return inputString[currentLine++];
