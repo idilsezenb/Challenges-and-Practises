@@ -86,6 +86,23 @@ function getLetter(s) {
    }
 }
 
+##  Day 2: Loops
+
+function vowelsAndConsonants(s) {  
+    let arr = s.split('');  
+    for(let i = 0; i< arr.length; i++){  
+        if("aeiou".includes(arr[i])){  
+            console.log(arr[i])  
+        }   
+    }   
+     for(let i = 0; i< arr.length; i++){  
+        if(!("aeiou".includes(arr[i]))){  
+            console.log(arr[i])  
+        }   
+    }   
+}  
+
+
 ## Day 3:Intro to Conditional Statements
 
 <br>
